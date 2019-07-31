@@ -1,0 +1,64 @@
+.divider {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0;
+    opacity: .9;
+    /* position: absolute;
+    bottom: 0; */
+    /* margin-top: 400px; */
+}
+
+.divider a {
+    text-decoration: none;
+    background: #0d60bf;
+    padding: 0 2%;
+    border-radius: 4px;
+    color: white;
+    
+}
+.divider p:first-child {
+    /* position: relative;
+    top: 10px; */
+}
+.divider .arrow {
+    
+    font-size: 50px;
+    /* color: #666666; */
+    position: relative;
+}
+
+.divider .arrow.down {
+    transform: rotate(-45deg);
+    left: -5px;
+    top: -8px;
+}
+
+.divider .arrow.up {
+    transform: rotate(135deg);
+    left: 5px;
+    top: 8px;
+}
+.gradient {
+      margin-top: 20px;
+    height: 20px;
+    position: relative;
+    width: 100%;
+    background: radial-gradient(ellipse farthest-side at top center, #69a84f8a, #69a84f00);
+}
+/* .gradient:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(left, transparent, rgba(0,0,0,0.02), rgba(0,0,0,0.02), transparent);
+} */
+
+#title .divider {
+    /* position: relative;
+    top: 20px; */
+}
