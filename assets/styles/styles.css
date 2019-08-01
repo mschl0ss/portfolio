@@ -42,7 +42,7 @@ main {
     margin: 0 auto;
     min-height: 100vh;
     background: white;
-    box-shadow: 0px 0px 20px 0 #e6e6e6;
+    box-shadow: inset 0px 0px 20px 14px #e8e8e8;
     scroll-behavior: smooth;
     height: 1000px;
     overflow: scroll;
@@ -57,6 +57,7 @@ main > section {
 a {
     text-decoration: none;
 }
+a:visited {color: inherit;}
 h1,h2, h3, h4 {
     font-family: 'Fjalla One', sans-serif;
     letter-spacing: 5px;
@@ -125,6 +126,20 @@ h4 {font-size: 25px;}
     line-height: 40px;
 }
 
+.about p {
+    margin: 2% 0;
+}
+
+.about p.top {
+    margin-bottom: 0.2%;
+}
+.about p.bottom {
+    margin-top: 0.2%;
+}
+.about ul {
+    margin: 0 10%;
+}
+
 
 
 
@@ -142,7 +157,6 @@ h4 {font-size: 25px;}
     width: 100%;
     text-align: center;
 }
-
 #laudable .logo {
     /* margin-right: 10px; */
     color: black;
@@ -160,16 +174,40 @@ h4 {font-size: 25px;}
     /* font-size: 40px; */
 }
 
-#ctype {
+#laudable .buttons li {
+    box-shadow: inset 0px 0px 2px #888888;
+    color: black;
+    background: white;
+}
+
+#laudable .buttons li:hover {
     background: black;
     color: white;
 }
+#ctype {
+    background: black;
+    color: #e6e6e6;
+}
 #ctype .logo {
     font-family: 'Bungee Outline', cursive;
+    color: white;
 }
 
+#ctype .buttons li {
+    box-shadow: inset 0px 0px 2px #e6e6e6;
+    color: white;
+    background: black;
+}
+
+#ctype .buttons li:hover { 
+    background: white;
+    color: black;
+}
 .pcard .logo {
     font-size: 250%;
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
 .pcard-container{
     background: rgba(0, 0, 0, 0.01);
@@ -216,24 +254,23 @@ h4 {font-size: 25px;}
     padding: 4% 0;
     margin-right: 3%;
     border-radius: 5px;
-    /* border: solid 1px black; */
-    box-shadow: inset 0px 0px 5px #888888;
-    color: black;
-    background: white;
     cursor: pointer;
     white-space: nowrap;
     min-width: 75px;
 }
 
 .buttons li:hover {
-    background: black;
-    color: white;
+  
 }
 
 .techs {
 display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20%;
+}
+
+.techs li {
+    white-space: nowrap;
 }
 
 
